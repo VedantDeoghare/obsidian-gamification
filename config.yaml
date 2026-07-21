@@ -1,0 +1,25 @@
+vault_path: "/mnt/hdd/Obsidian Vault/VeduPersonal"
+
+archive_folder: "Personal Collections/Archive"
+tasks_folder: Personal Collections/Tasks
+
+gamification_folder: "Personal Collections/Gamification"
+ledger_file: "Personal Collections/Gamification/XP Ledger.md"
+transactions_folder: "Personal Collections/Gamification/XP Transactions"
+
+rewards_folder: "Personal Collections/Rewards"
+
+default_penalty: 1
+
+level_thresholds:
+  1: 0
+  2: 100
+  3: 250
+  4: 450
+  5: 700
+  6: 1000
+  
+xp:
+  base: 5
+  importance_multiplier: 2
+  urgency_multiplier: 3
