@@ -2,7 +2,7 @@ vault_path: "/mnt/hdd/Obsidian Vault/VeduPersonal"
 
 archive_folder: "Personal Collections/Archive"
 tasks_folder: Personal Collections/Tasks
-
+habits_folder: Personal Collections/Habits
 gamification_folder: "Personal Collections/Gamification"
 ledger_file: "Personal Collections/Gamification/XP Ledger.md"
 transactions_folder: "Personal Collections/Gamification/XP Transactions"

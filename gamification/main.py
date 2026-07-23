@@ -10,6 +10,7 @@ from gamification.reward_engine import scan_rewards
 from gamification.utils import load_config, absolute_path, read_markdown
 from gamification.task_engine import process_task
 from gamification.ledger import award_xp
+from gamification.habit_engine import scan_habits
 from gamification.transaction_engine import (
     transaction_exists,
     create_transaction,
@@ -77,6 +78,8 @@ def scan_tasks():
 def main():
     print("\n========== TASK SCAN ==========\n")
     scan_tasks()
+    print("\n========== HABITS SCAN ==========\n")
+    scan_habits()
     print("\n========== REWARDS SCAN ==========\n")
     scan_rewards()
 
