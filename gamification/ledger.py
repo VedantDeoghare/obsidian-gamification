@@ -7,7 +7,7 @@ Responsible for:
 - Spending XP
 - Regenerating the dashboard
 """
-
+from gamification.streak_engine import update_streak
 from datetime import datetime
 
 from gamification.utils import (
@@ -118,7 +118,7 @@ def award_xp(amount):
     ledger["currentxp"] = ledger.get("currentxp", 0) + amount
     ledger["lifetimexp"] = ledger.get("lifetimexp", 0) + amount
     ledger["taskscompleted"] = ledger.get("taskscompleted", 0) + 1
-
+    update_streak(ledger)
     info = level_info(ledger["lifetimexp"])
 
     ledger["level"] = info["level"]
